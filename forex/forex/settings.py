@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'broker.apps.BrokerConfig',
     'accounts.apps.AccountsConfig',
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -138,3 +139,6 @@ STATICFILES_FINDERS = [
 
 LOGIN_REDIRECT_URL = 'list'   # requires an html file (login.html).
 LOGOUT_REDIRECT_URL = 'list'  # doesn't require any html file.
+
+
+# CRISPY_TEMPLATE_PACK = 'bootstrap4'
